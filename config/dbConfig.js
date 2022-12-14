@@ -5,10 +5,10 @@ module.exports = {
   DB: process.env.DATABASE,
   PORT: process.env.PORT,
   DB_URL: process.env.DATABASE_URL,
-  dialect: "mysql",
+  dialect: "postgres",
   dialectOptions: {
     ssl: {
-      rejectUnauthorized: false,
+      rejectUnauthorized: true,
     },
   },
 
